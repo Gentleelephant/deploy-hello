@@ -13,4 +13,4 @@ jobs:
           go-version: 1.18
       - name: Build
         run:
-          bash ./script/script.sh
+          bash script.sh
