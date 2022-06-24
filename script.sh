@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 VERSION=v1.0.0
-APPNAME=test-github-action
+APPNAME=deploy-hello
 
 # build the project
-go build -o ./bin/deploy-hello main.go
+go build -o ./bin/$APPNAME main.go
 
 # build image
 docker build -t birdhk/$APPNAME:v1 -f Dockerfile .
