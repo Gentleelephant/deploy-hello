@@ -7,7 +7,7 @@ APPNAME=deploy-hello
 go build -o ./bin/$APPNAME main.go
 
 # build image
-docker build -t birdhk/$APPNAME:v1 -f Dockerfile .
+docker build -t birdhk/$APPNAME:$VERSION -f Dockerfile .
 
 # docker login
 docker login --username=birdhk --password=zp521314....
