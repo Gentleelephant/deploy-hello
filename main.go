@@ -1,4 +1,4 @@
-package deploy_hello
+package main
 
 import "fmt"
 
