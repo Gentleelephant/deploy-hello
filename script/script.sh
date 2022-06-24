@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 # build the project
-go build -o deploy-hello ../main.go
+go build -o ../bin/deploy-hello ../main.go
 
 # build image
