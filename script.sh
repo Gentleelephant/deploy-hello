@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=v1.0.0
+VERSION=v1.0.1
 APPNAME=deploy-hello
 
 # build the project
