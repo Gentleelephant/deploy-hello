@@ -1,3 +1,3 @@
 #!/usr/bin/sh
 
-./deploy-hello -c ./config.yaml
+./deploy-hello serve -c ./config.yaml
