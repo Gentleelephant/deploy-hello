@@ -4,8 +4,14 @@ VERSION=v1.0.0
 APPNAME=deploy-hello
 
 # build the project
+echo "Building the project..."
 go build -o ./deploy-hello main.go
+ls ./
 
+if [ ! -e ./deploy-hello ]; then
+    echo "Error: deploy-hello not found"
+    exit 1
+fi
 # build image
 docker build -t birdhk/${APPNAME}:${VERSION} .
 
