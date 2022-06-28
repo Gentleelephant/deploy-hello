@@ -1,11 +1,11 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 VERSION=v1.0.0
 APPNAME=deploy-hello
 
 # build the project
 echo "Building the project..."
-go build -o ./deploy-hello ./main.go
+go build ./main.go
 ls ./
 
 if [ ! -e ./deploy-hello ]; then
