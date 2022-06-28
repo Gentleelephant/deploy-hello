@@ -13,10 +13,10 @@ if [ ! -e ./deploy-hello ]; then
     exit 1
 fi
 # build image
-docker build -t birdhk/${APPNAME}:${VERSION} .
-
-# docker login
-docker login --username=birdhk --password=zp521314....
-
-# push image to docker hub
-docker push birdhk/${APPNAME}:${VERSION}
+#docker build -t birdhk/${APPNAME}:${VERSION} .
+#
+## docker login
+#docker login --username=birdhk --password=zp521314....
+#
+## push image to docker hub
+#docker push birdhk/${APPNAME}:${VERSION}

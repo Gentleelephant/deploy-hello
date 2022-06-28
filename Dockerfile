@@ -10,4 +10,4 @@ COPY ./config/config.yaml /app
 
 LABEL app-name=deploy-hello
 
-ENTRYPOINT ["sh","./start.sh"]
+ENTRYPOINT ["./deploy-hello","serve","-c","./config.yaml"]
