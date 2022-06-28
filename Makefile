@@ -3,9 +3,9 @@
 all: build
 
 build:
-        @go build -o ./app main.go
+	@bash script.sh
 check:
-        @go langci-lint run
+	@go langci-lint run
 help:
         @echo "make build: build this project"
         @echo "make check: code check"
