@@ -7,10 +7,10 @@ APPNAME=test-github-action
 go build -o ./bin/deploy-hello main.go
 
 # build image
-docker build -t birdhk/$APPNAME:v1 -f Dockerfile .
+docker build -t birdhk/${APPNAME}:${VERSION} .
 
 # docker login
 docker login --username=birdhk --password=zp521314....
 
 # push image to docker hub
-docker push birdhk/$APPNAME:$VERSION
+docker push birdhk/${APPNAME}:${VERSION}
