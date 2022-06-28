@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-VERSION=v1.0.1
+VERSION=v1.0.0
 APPNAME=deploy-hello
 
 # build the project

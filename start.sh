@@ -1,3 +1,3 @@
 #!/usr/bin/sh
 
-sh ./deploy-hello
+./deploy-hello -c ./config.yaml
