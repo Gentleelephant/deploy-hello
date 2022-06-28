@@ -1,9 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"deploy-hello/global"
+	"deploy-hello/initialization"
+	"fmt"
+	"time"
+)
 
 func main() {
 
-	fmt.Println("Hello, world!")
+	initialization.InitConfig()
+	fmt.Printf("%+v", global.NacosConfig.Nacos)
+
+	initialization.GetConfigFromNacos()
+	fmt.Printf("%+v", global.Config.MySQL)
+	time.Sleep(time.Second * 360)
 
 }
