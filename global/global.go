@@ -9,4 +9,5 @@ var (
 	NacosConfig = &config.LocalNacosConfig{}
 	Config      = &config.Config{}
 	DbConn      = &gorm.DB{}
+	ConfigFile  = "config/config.yaml"
 )

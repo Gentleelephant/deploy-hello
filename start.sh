@@ -1,5 +1,3 @@
-#!/usr/bin/bash
+#!/usr/bin/sh
 
-./deploy-hello
-
-tail -f /dev/null
+sh ./deploy-hello

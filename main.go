@@ -1,19 +1,11 @@
+/*
+Copyright © 2022 NAME HERE <EMAIL ADDRESS>
+
+*/
 package main
 
-import (
-	"deploy-hello/global"
-	"deploy-hello/initialization"
-	"fmt"
-	"time"
-)
+import "deploy-hello/cmd"
 
 func main() {
-
-	initialization.InitConfig()
-	fmt.Printf("%+v", global.NacosConfig.Nacos)
-
-	initialization.GetConfigFromNacos()
-	fmt.Printf("%+v", global.Config.MySQL)
-	time.Sleep(time.Second * 360)
-
+	cmd.Execute()
 }

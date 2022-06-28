@@ -9,7 +9,8 @@ import (
 
 // InitConfig 初始化配置
 func InitConfig() {
-	configFile := "./config.yaml"
+	configFile := global.ConfigFile
+	fmt.Println("configFile:", configFile)
 	v := viper.New()
 	v.SetConfigFile(configFile)
 	if err := v.ReadInConfig(); err != nil {
