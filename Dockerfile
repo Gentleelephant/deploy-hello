@@ -8,4 +8,4 @@ COPY ./start.sh  /app
 
 LABEL app-name=deploy-hello
 
-ENTRYPOINT ["bash","./start.sh"]
+ENTRYPOINT ["sh","./start.sh"]
